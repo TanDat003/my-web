@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>AB Beauty World-Chi tiết sản phẩm</title>
+
+    <style>
+        body {
+            font-family: Arial, Tahoma;
+            font-size: 12px
+        }
+
+        #layout {
+
+            background-color: #f2f2f2;
+            margin: auto;
+        }
+
+        #header1 {
+            height: 100px;
+
+            background-color: black;
+            display: block;
+        }
+
+        #header2 {
+
+
+            background-color: rgb(252, 243, 1);
+            font-size: 18px;
+        }
+
+        #main {
+            width: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+        }
+
+        .left {
+            margin-left: 20%;
+            height: auto;
+            width: 60%;
+            background-color: #fff;
+
+
+        }
+
+        .left li {
+            list-style-type: none;
+        }
+
+        .li1 {
+            margin-top: 20px;
+            font-size: 14px;
+            color: coral;
+        }
+
+        .li2 {
+            font-size: 22px;
+        }
+
+        .li3 {
+            font-size: 10px;
+            color: dimgrey;
+        }
+
+        .li4 {
+            font-size: 30px;
+            color: red;
+        }
+
+        .divleft1 {
+            width: 45%;
+            height: auto;
+            float: left;
+        }
+
+        .divleft1 img {
+            width: 80%;
+            float: left;
+            margin-left: 10%;
+
+        }
+
+        .divKhung3 {
+            margin-top: 6%;
+            width: 14%;
+            height: 45px;
+            background-color: red;
+            float: left;
+            margin-left: 5%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            border: red solid 1px;
+
+        }
+
+        .divKhung3 a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 16px;
+
+        }
+
+        .divKhung2 {
+            margin-top: 6%;
+            width: 16%;
+            height: 45px;
+            border: red solid 1px;
+            float: left;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(238, 211, 201);
+        }
+
+        .divKhung2 div img {
+            width: 20%;
+            height: 100%;
+            margin-left: 3%;
+        }
+
+        .divKhung2 div {
+            display: flex;
+        }
+
+        .divKhung2 div a {
+            margin-top: 3%;
+            text-decoration: none;
+            color: red;
+            font-size: 16px;
+        }
+
+        .divKhung1 {
+            margin-top: 15%;
+            width: 12%;
+            height: 45px;
+            border: black solid 1px;
+            float: right;
+            margin-right: 1%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+
+        #pageF {
+            width: 80%;
+            height: auto;
+            margin-left: 15%;
+            background-color: #03b0fa;
+            clear: both;
+            color: black;
+           
+        }
+
+        #khoangtrong {
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 40px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .divPageF {
+            width: 24%;
+            font-size: 11px;
+            height: auto;
+            float: left;
+            color: black;
+            margin-top: 20px;
+
+        }
+
+        .divPageF a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+        .logoAB {
+            height: 70px;
+            padding-top: 15px;
+            padding-left: 80px;
+            float: left;
+        }
+
+        .giohang {
+            height: 70px;
+
+            padding-top: 15px;
+            padding-right: 30px;
+        }
+
+        .canhan {
+            height: 50px;
+
+            padding-bottom: 12px;
+            padding-right: 80px;
+        }
+
+        .linkgiohang {
+            float: left;
+
+            margin-left: 20%;
+
+        }
+
+        .linkgiohang a i {
+
+            color: gold;
+            margin-left: 80px;
+            float: left;
+            font-size: 30px;
+            margin-top: 35px;
+        }
+
+        .timkiem {
+            width: 25%;
+            float: left;
+            height: 23px;
+            margin-top: 33px;
+            margin-left: 200px;
+
+        }
+
+        .timkiem input {
+
+            padding: 6px;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .hd2_khung {
+            border: black solid 1px;
+            margin: auto;
+            width: 80%;
+            height: 100%;
+        }
+
+        .hd2_topnav {
+            background-color: rgb(252, 243, 1);
+            overflow: hidden;
+            width: auto;
+
+        }
+
+        .hd2_topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-size: 18px;
+
+
+        }
+
+        .hd2_topnav a:hover {
+            background-color: black;
+            color: #f2f2f2;
+        }
+
+        .hd2_div {
+            margin-left: 300px;
+        }
+
+        .tangGiam {
+            width: 30px;
+
+        }
+
+        .profile
+        {
+            font-size: 13px;
+            color: #0351fa;
+        }
+        .chamsoc
+        {
+            color: red;
+        }
+        .gioiThieuSP {
+            margin: auto;
+
+            width: 80%;
+            height: 300px;
+            background-color: #03b0fa;
+        }
+
+        .TenMoTa {
+            width: 100%;
+            font-size: 18px;
+            background-color: #f2f2f2;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .TenMoTa b {
+            margin-left: 20%;
+        }
+
+        .MoTa {
+            width: 40%;
+            background-color: #ffff;
+            margin-left: 20%;
+            padding: 15px;
+            float: left;
+
+        }
+
+        .MoTa p {
+            font-size: 16px;
+        }
+
+        .MoTa img {
+            width: 60%;
+            text-align: center;
+            margin-left: 20%;
+        }
+
+        .MoTa ul {
+            list-style: none;
+        }
+
+        .bestSeller {
+            width: 15%;
+            float: left;
+            margin-left: 2%;
+            height: auto;
+            background-color: #ffff;
+        }
+
+        .BSLdivT {
+            width: 100%;
+            background-color: red;
+            color: #ffff;
+            font-size: 16px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .BSLdivSP {
+            margin-top: 5px;
+            float: left;
+            font-size: 10px;
+            width: 100%;
+        }
+
+        .BSLdivSP img {
+            float: left;
+            width: 35%;
+            padding-right: 5%;
+        }
+
+        .pBSL {
+            color: red;
+        }
+
+        .danhGiaSP {
+            margin-top: 30px;
+            float: left;
+            width: 60%;
+            margin-left: 20%;
+            background-color: #ffff;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .divGachNgang {
+            border-top: #f2f2f2 solid 1px;
+            margin-top: 10px;
+
+
+        }
+
+        .divDanhGIa {
+            margin-top: 10px;
+            padding-right: 5%;
+            width: 25%;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .divDanhGIa input {
+            width: 90%;
+            height: 20px;
+
+        }
+
+        .noiDungDanhGia {
+
+            float: left;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .guiDanhgia {
+            float: left;
+            margin-top: 80px;
+
+        }
+
+        .ngoiSao {
+            margin-top: 10px;
+            color: gold;
+        }
+
+        @media screen and (max-width:420px) and (min-width:360px ) {
+            #left {
+                display: none;
+            }
+
+            #header1 {
+                height: 50px;
+
+                background-color: black;
+                display: block;
+            }
+
+            .logoAB {
+                height: 30px;
+                padding-top: 5px;
+                padding-left: 10px;
+            }
+
+            .linkgiohang {
+                margin-left: 5%;
+
+            }
+
+            .linkgiohang a i {
+                margin-left: 5px;
+                float: left;
+                font-size: 20px;
+                margin-top: 15px;
+            }
+
+            .timkiem {
+                width: 40%;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            #header2 {
+                flex-direction: column;
+            }
+
+            .hd2_khung {
+                width: 100%;
+            }
+
+            .hd2_div {
+                margin-left: 5px;
+
+
+            }
+
+            .hd2_topnav a {
+                font-size: 12px;
+                padding: 10px 10px;
+                width: 100%;
+                text-align: left;
+                margin-left: 10px;
+
+            }
+            .divleft1
+            {
+                width:90%;
+            }
+            .left
+            {
+                padding: 10px;
+                margin-top: 10px;
+                width: 90%;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+            .li1
+            {
+                font-size: 14px;
+            }
+            .li2
+            {
+                font-size: 18px;
+            }
+            .li3
+            {
+                margin-top: 5px;
+            }
+            .li4
+            {
+                font-size: 20px;
+            }
+            .divKhung2 
+            {
+                margin-left: 15%;
+                height: 30px;
+                width: 30%;
+                margin-bottom: 15px;
+            }
+            .divKhung3
+            {
+                margin-right: 15%;
+                font-size: 10px;
+                height: 30px;
+                width: 30%;
+            }
+            .divKhung2 div a
+            {
+                font-size: 12px;
+            }
+            .divKhung3 a
+            {
+                font-size: 12px;
+            }
+            .MoTa
+            {
+                width: 82%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .MoTa p{
+                font-size: 10px;
+                
+            }
+            .TenMoTa
+            {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .TenMoTa b
+            {
+                font-size: 12px;
+                margin-left: 5%;
+            }
+           .MoTa h2
+            {
+                font-size: 12px;
+            }
+            .bestSeller
+            {
+                margin-top: 10px;
+                width: 90%;
+                margin-left: 5%;
+                
+            }
+            .BSLdivSP
+            {
+                width: 100%;
+                margin-right: 0;
+            }
+            .BSLdivT
+            {
+                width: 97%;
+                
+            }
+            .danhGiaSP
+            {
+                width: 80%;
+                margin-left: 5%;
+            }
+            .divDanhGIa
+            {
+                width: 80%;
+                padding-right: 0;
+            }
+            .noiDungDanhGia textarea
+            {
+                width: 100%;
+            }
+            .guiDanhgia
+            {
+                margin-bottom: 20px;
+                float: none;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+
+            }
+            .guiDanhgia input{
+                float: none;
+                margin: auto;
+                
+            }
+            #khoangtrong
+            {
+                height: 0;
+                margin-bottom: 10px;
+            }
+            .divPageF
+            {
+                margin-top: 10px;
+            }
+
+
+
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="layout">
+        <div id="header1">
+            <div>
+                <a href="http://127.0.0.1:5500/TrangChu.html"><img class="logoAB" src="logoAB.webp" alt=""></a>
+            </div>
+            <div class="timkiem">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="linkgiohang">
+
+                <a href="http://127.0.0.1:5500/GioHang.html"><i
+                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                <a href="http://127.0.0.1:5500/DangKy.html"><i class="fa-solid fa-user"></i></a>
+
+            </div>
+
+        </div>
+        <div id="header2">
+            <div class="hd2_div">
+                <div class="hd2_topnav">
+                    <a href="http://127.0.0.1:5500/De_An/TrangSanPham.html"><b>Thương Hiệu Hot</b></a>
+                    <a href="http://127.0.0.1:5500/De_An/TrangSanPham.html"><b>Cẩm Nan Làm Đẹp</b></a>
+                    <a href="http://127.0.0.1:5500/De_An/TrangSanPham.html"><b>Angel Beauty</b></a>
+                    <a href="http://127.0.0.1:5500/De_An/TrangSanPham.html"><b>Thiết kế</b></a>
+                    <a href="http://127.0.0.1:5500/De_An/TrangSanPham.html"><b>Chương Trình Thàng 6</b></a>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="left">
+                <div class="divleft1">
+                    <img src="nuochoaCarolina.webp" alt="">
+                </div>
+                <div>
+                    <li class="li1"><b>CAROLINA HERRERA</b></li>
+                    <li class="li2"><b>Nước hoa nữ carolina herrera good girl suprême edp 50ml</b></li>
+                    <li class="li3">0 đánh giá | Mã sản phẩm: 8411061972168</li>
+                    <div class="ngoiSao">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <br>Số lượng:
+                    <input  class="tangGiam" type="number" name="points" min="0" max="100" step="1" value="1">
+                    <li class="li4"><b>2,415,000 VNĐ</b></li>
+                    <li>Giá hãng: 3,220,000 VNĐ - Tiết kiệm: 805,000 VNĐ (-25%)</li>
+                   
+                    <div class="divKhung2">
+                        <div>
+                            <img src="themGioHang2.png" alt="">
+                            <a href="">Thêm vào giỏ</a>
+                        </div>
+                    </div>
+                    <div class="divKhung3">
+                        <a href="">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="TenMoTa"><b>Mô tả sản phẩm</b> </div>
+        <div class="MoTa">
+            <h2>GIỚI THIỆU THƯƠNG HIỆU:</h2>
+            <p>Hãng Carolina Herrera được thành lập vào năm 1980 bởi Venezuelan – nhà thiết kế người Mỹ.
+                Với phong cách sang trọng, tinh tế thương hiệu Carolina Herrera đã tạo nên sự khác
+                biệt và gặt hái được những thành công to lớn trong thời gian ngắn. Dòng nước hoa đầu
+                tiên ra mắt năm 1988 dành cho phụ nữ được đặt trùng tên với thương hiệu “Carolina
+                Herrera”. Sau đó, hãng Carolina Herrera liên tục tung ra thị trường những dòng nước hoa
+                dành cho nam và nữ rất nổi tiếng đã mang lại tên tuổi cho thương hiệu trong những năm
+                qua. Công ty mở rộng quy mô thông qua việc cho ra đời thương hiệu CH Carolina Herrera
+                vào năm 2008 và đẩy mạnh kinh doanh về phụ kiện, những sản phẩm trang trí nhà rất thời
+                trang cũng như những dòng nước hoa cho nam và nữ dưới tên nhãn hiệu CH.
+
+            </p>
+            <img src="MT-Carolina.webp" alt="">
+            <h2>MÔ TẢ SẢN PHẨM: </h2>
+            <p>Với hình dáng của chiếc giày pha lê xanh đen cùng phần gót nhọn vàng đồng tinh tế, sắc
+                sảo, Good Girl nhanh chóng trở thành từ khoá được tìm kiếm nhiều nhất trên mạng xã hội.
+                Nằm trong top những chai nước hoa bán chạy nhất mùa thu đông và được phái đẹp vô cùng yêu
+                thích ngay từ khi vừa ra mắt vào cuối năm 2016 là điều không có gì bất ngờ với chiếc giày
+                cao gót Good Girl tới từ nhà mốt Carolina Herrera.
+
+                <br> <br> Nước hoa nữ Carolina Herrera good girl edp là một sự kết hợp đầy mới lạ, tạo một phong cách
+                độc đáo riêng biệt dành cho người dùng bởi những thành phần là hoa huệ, đậu Tonka tinh khiết, nồng nàn,
+                khéo léo thể hiện tính cách của người phụ nữ. Hoa nhài Sambac trắng và cacao cũng là những thành phần
+                mang đến vị ngọt đậm đà quyến rũ cho Good Girl. Với slogan "It's so good to be bad", Good Girl hứa hẹn
+                là một mùi hương đầy khiêu khích, gợi cảm giúp các nàng tỏa sáng giữa đám đông.
+            </p>
+            <h2>THÀNH PHẦN:</h2>
+            <p>- Hương đầu: Hạnh nhân, Cà phê, Cam bergamot <br><br>
+
+                - Hương giữa: Hoa nhài Sambac, Hoa huệ, Hoa cam <br><br>
+
+                - Hương cuối: Đậu tonka, Cacao, Vani </p><br>
+            <img src="MT-Carolina2.webp" alt="">
+            <ul>
+
+                <li>- <b>Nồng độ:</b> Eau De Parfum (EDP)</li>
+                <li>- <b>Loại nước hoa:</b> nữ</li>
+                <li>- <b>Nhóm hương:</b> Hương Hoa cỏ Phương đông - Oriental Floral</li>
+                <li>- <b>Phong cách:</b> Cá tính, gợi cảm, quyến rũ, nổi bật đầy khiêu khích</li>
+                <li>- <b>Cách sử dụng:</b> Xịt</li>
+                <li>- <b>Năm phát hành:</b> 2016</li>
+                <li>- <b>Xuất xứ thương hiệu:</b> Mỹ</li>
+                <li>- <b>Bảo quản:</b> bảo quản nơi khô mát, tránh ánh sáng trực tiếp. Đậy nắp kín sau khi sử dụng</li>
+                <li>- <b>Dung tích:</b> 50ml</li>
+            </ul>
+
+
+        </div>
+        <div class="bestSeller">
+            <div class="BSLdivT">
+                <b>Best Seller 10%</b>
+            </div>
+            <div class="BSLdivSP">
+                <img src="BSL1.webp" alt="">
+                <p>Nước Hoa Hồng Làm Săn Da, Loại Bỏ Độc Tố Vichy Aqualia Thermal Hydrating Refreshing Water (200ml)
+                </p>
+                <b class="pBSL"> 436,500 VNĐ </b> <del>485,000 VNĐ</del>
+
+            </div>
+            <div class="BSLdivSP">
+                <img src="BST2.webp" alt="">
+                <p>Kem Chống Nắng Có Màu Ngăn Sạm Da Giảm Thâm Nám Vichy
+                </p>
+                <b class="pBSL"> 486,000 VNĐ </b> <del>540,000 VNĐ</del>
+
+            </div>
+            <div class="BSLdivSP">
+                <img src="BSL3.webp" alt="">
+                <p>Sữa Rửa Mặt Và Tắm Cho Da Khô La Roche-Posay Lipikar Syndet 200ml
+                </p>
+                <b class="pBSL"> 351,000 VNĐ </b> <del>390,000 VNĐ</del>
+
+            </div>
+            <div class="BSLdivSP">
+                <img src="BST4.jpg" alt="">
+                <p>Nước Làm Sạch Sâu Và Tẩy Trang Cho Da Nhạy Cảm La Roche-Posay Micellar Water
+                    Ultra Sensitive Skin 400ml
+                </p>
+                <b class="pBSL">445,500 VNĐ </b> <del>495,000 VNĐ</del>
+
+            </div>
+        </div>
+        <div class="danhGiaSP">
+            <h3>Đánh giá sản phẩm</h3>
+            <div class="divGachNgang">
+                <div class="divDanhGIa">
+                    Tên: <br>
+                    <input type="text">
+                </div>
+                <div class="divDanhGIa" >
+                    Email: <br>
+                    <input type="text">
+                </div>
+                <div class="divDanhGIa">
+                    Số điện thoại: <br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="noiDungDanhGia">
+                <b>Nội dung đánh giá:</b><br>
+                <textarea name="" id="" cols="80%" rows="3"></textarea>
+                <br><br><b>Thêm ảnh hoặc video: </b>
+                <input type="file">
+            </div>
+            <div class="guiDanhgia">
+                <input type="submit" value="Gửi đánh giá">
+            </div>
+        </div>
+
+        <div id="khoangtrong"></div>
+        <div id="pageF">
+            <div class="divPageF">
+                <label for=""><b>Hỗ trợ khác hàng</b></label><br><br>
+                <a href="" >Chăm sóc khách hàng: <b class="chamsoc"> 1900 88 68 99</b></a><br><br>
+                <a href="">Các câu hỏi thường gặp</a><br><br>
+                <a href="">Hướng dẫn đặt hàng</a><br><br>
+                <a href="">Phương thức thanh toán</a><br><br>
+                <a href="">Phương thức vận chuyển</a><br><br>
+                <a href="">Chính sách đổi hàng</a><br><br>
+                <a href="">Hỗ trợ khách hàng: tsmdatdat@gmail.com</a><br><br>
+            </div>
+            <div class="divPageF">
+                <label for=""><b>Về AB Beauty World</b></label><br><br>
+                <a href="">Giới thiệu AB BEAUTY WORLD</a><br><br>
+                <a href="">Tuyển dụng</a><br><br>
+                <a href="">Chính sách bảo mật thanh toán</a><br><br>
+                <a href="">Chính sách bảo mật thông tin cá nhân</a><br><br>
+                <a href="">Chính sách giải quyết khiếu nại</a><br><br>
+                <a href="">Liên hệ</a><br><br>
+            </div>
+            <div class="divPageF">
+                <label for=""><b>Hệ Thống Siêu Thị Mỹ Phẩm</b></label><br><br>
+                <a href="">1613 Tỉnh Lộ 10, P. Tân Tạo A, Q. Bình Tân</a><br><br>
+                <a href="">348 -350 Trần Phú, P. 7, Q. 5</a><br><br>
+                <a href="">198A Mã Lò, P. Bình Trị Đông A, Q. Bình Tân</a><br><br>
+                <a href="">236K Lê Văn Sỹ, P. 1, Q. Tân Bình</a><br><br>
+                <a href="">388 - 390 Nguyễn Thị Thập, P. Tân Quy, Q.7</a><br><br>
+
+            </div>
+            <div class="divPageF">
+                <label for="">
+                    <a href="http://127.0.0.1:5500/profile.html" ><b class="profile">Thông tin giam đốc</b></a>
+                    </label><br><br>
+                <a href="">Họ tên: Nguyễn Tấn Đạt</a><br><br>
+                <a href="">Mã số sinh viên: 2001210166</a><br><br>
+                <a href="">SĐT liên hê: 0377851498</a><br><br>
+                <a href="">Tài khoảng Facebook</a><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

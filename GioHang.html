@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>AB Beauty World - Giỏ hàng</title>
+
+    <style>
+        body {
+            font-family: Arial, Tahoma;
+            font-size: 12px
+        }
+
+        #layout {
+
+            background-color: #f2f2f2;
+            margin: auto;
+
+        }
+
+        #header1 {
+            height: 100px;
+
+            background-color: black;
+            display: block;
+        }
+
+
+        .profile
+        {
+            font-size: 13px;
+            color: #0351fa;
+        }
+        .chamsoc
+        {
+            color: red;
+        }
+
+        #pageF {
+            width: 80%;
+            height: auto;
+            margin-left: 15%;
+
+            clear: both;
+            color: black;
+        }
+
+        #khoangtrong {
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 40px;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .divPageF {
+            width: 24%;
+            font-size: 11px;
+            height: auto;
+            float: left;
+            color: black;
+
+        }
+
+        .divPageF a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+        .logoAB {
+            height: 70px;
+            padding-top: 15px;
+            padding-left: 80px;
+            float: left;
+
+        }
+
+        .logoABb {
+            text-decoration: none;
+            font-size: 30px;
+            color: gold;
+        }
+
+        .giohang {
+            height: 70px;
+
+            padding-top: 15px;
+            padding-right: 30px;
+        }
+
+        .canhan {
+            height: 50px;
+
+            padding-bottom: 12px;
+            padding-right: 80px;
+        }
+
+        .linkgiohang {
+            float: left;
+
+            margin-left: 20%;
+
+        }
+
+        .linkgiohang a i {
+
+            color: gold;
+            margin-left: 80px;
+            float: left;
+            font-size: 30px;
+            margin-top: 35px;
+        }
+
+        .timkiem {
+            width: 25%;
+            float: left;
+            height: 23px;
+            margin-top: 33px;
+            margin-left: 200px;
+
+        }
+
+        .timkiem input {
+
+            padding: 6px;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+
+        .divPageF {
+            margin-top: 20px;
+        }
+
+        .diachi {
+
+            width: 80%;
+            margin-left: 10%;
+            float: left;
+            background-color: #fff;
+
+            margin-bottom: 20px;
+            font-size: 16px;
+
+        }
+
+        .diachi div {
+            margin-left: 5%;
+        }
+
+        .diachi b {
+            margin-right: 20px;
+        }
+
+        .diachi a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .diachip {
+            color: #ee4d2d;
+            font-size: 18px;
+        }
+
+        .DC {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .vtrWey {
+            margin-top: 20px;
+
+            height: 3px;
+            width: 100%;
+            margin-left: 0;
+            background-position-x: -20px;
+            background-size: 116px 3px;
+            background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px,
+                    transparent 0,
+                    transparent 41px,
+                    #f18d9b 0, #f18d9b 74px,
+                    transparent 0,
+                    transparent 82px);
+        }
+
+        .Top {
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+            background-color: #fff;
+            font-size: 15px;
+
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .divTieude1 {
+
+            width: 50%;
+            float: left;
+            padding-left: 5%;
+            padding-top: 10px;
+
+        }
+
+        .divTop {
+            padding: 10px;
+            width: 50%;
+            float: left;
+
+        }
+
+        .divTop table {
+            width: 100%;
+
+        }
+
+        .divTop td {
+
+            text-align: left;
+
+        }
+
+        #main {
+            width: 80%;
+            margin-left: 10%;
+            background-color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        td img {
+            width: 70%;
+        }
+
+        .mainSP {
+            display: flex;
+            width: 90%;
+            margin-left: 5%;
+            border: rgb(225, 224, 224) solid 1px;
+            margin-bottom: 10px;
+
+
+        }
+
+        .mainleft {
+            width: 50%;
+            float: left;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .mainleft a {
+            text-decoration: none;
+            color: orangered;
+        }
+
+        .GH_sanpham {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .mainright {
+            padding: 10px;
+            font-size: 14px;
+            width: 50%;
+            float: left;
+
+
+        }
+
+        .gia1 {
+            margin-left: 10%;
+        }
+
+        .gia2 {
+            margin-left: 50%;
+        }
+
+        .mainright input {
+            width: 30px;
+        }
+
+        .ThanhToan {
+            width: 80%;
+            margin-left: 10%;
+            background-color: #fff;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+
+        }
+
+        .space {
+
+            width: 90%;
+            margin-left: 5%;
+            border-bottom: #f2f2f2 solid 1px;
+            float: left;
+        }
+
+        .TT {
+
+            width: 90%;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        .TT a {
+            text-decoration: none;
+            color: blue;
+
+        }
+
+        .TongTien {
+
+            width: 90%;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 16px;
+            background-color: #fff;
+
+        }
+
+        .TongTien table {
+            width: 30%;
+            margin-left: 70%;
+            padding: 10px 0 10px 0;
+        }
+
+        .tongTH {
+
+            float: right;
+        }
+
+        .tongTT {
+            color: red;
+            float: right;
+            font-size: 20px;
+        }
+
+        .cards {
+            align-items: center;
+            display: flex;
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+
+        .cards div {
+
+            width: 15%;
+            float: left;
+            margin-right: 10%;
+        }
+
+        .cards img {
+            width: 100%;
+
+        }
+
+        .themThe {
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            border: black solid 1px;
+            font-size: 16px;
+
+
+        }
+
+        .themThe:hover {
+            background-color: #f5f5f5;
+        }
+
+        .dathang {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            justify-content: space-between;
+        }
+
+        .dathang div {
+            padding: 40px;
+        }
+
+        .dathang button {
+            background-color: #ee4d2d;
+            color: #fff;
+            border: none;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 5px;
+
+        }
+
+        .dathang button:hover {
+            background-color: orangered;
+        }
+
+        @media screen and (max-width:420px) and (min-width:360px ) {
+            #left {
+                display: none;
+            }
+
+            #header1 {
+                height: 50px;
+
+                background-color: black;
+                display: block;
+            }
+
+            .logoAB {
+                height: 30px;
+                padding-left: 0px;
+                padding-top: 10px;
+            }
+
+            .linkgiohang {
+                margin-left: 5%;
+
+            }
+
+            .linkgiohang a i {
+                margin-left: 5px;
+                float: left;
+                font-size: 20px;
+                margin-top: 15px;
+            }
+
+
+            .timkiem {
+                width: 40%;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            #pagaF {
+                padding-top: 10px;
+            }
+
+            .diachi {
+                width: 90%;
+                margin-left: 5%;
+                font-size: 10px;
+                
+                margin-bottom: 5px;
+            }
+            .DC{
+                width: 90%;
+                margin-left: 5%;
+            }
+            .diachip {
+                font-size: 12px;
+
+            }
+
+            .Top {
+                width: 90%;
+                margin-left: 5%;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+
+            .divTieude1 {
+                padding: 5px;
+            }
+
+            #main {
+                width: 90%;
+                margin-left: 5%;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            .mainleft {
+                padding: 5px;
+                font-size: 8px;
+            }
+
+            td img {
+                width: 50px;
+            }
+
+            .mainright {
+                font-size: 8px;
+            }
+
+            .mainright input {
+                font-size: 8px;
+                width: 20px;
+            }
+
+            .ThanhToan {
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            .ThanhToan div {
+                font-size: 10px;
+            }
+
+            .themThe {
+                font-size: 10px;
+                height: 20px;
+                width: 70px;
+            }
+
+            .cards div {
+                margin-right: 8%;
+            }
+
+            .TongTien table {
+                width: 60%;
+                margin-left: 40%;
+            }
+
+            .TongTien table tr td {
+                font-size: 10px;
+            }
+
+            .tongTT {
+                font-size: 14px;
+            }
+
+            .dathang div {
+                padding: 10px;
+            }
+
+            .dathang button {
+                font-size: 12px;
+                width: 100px;
+                height: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="layout">
+
+        <div id="header1">
+            <div>
+                <a href="http://127.0.0.1:5500/TrangChu.html"><img class="logoAB" src="logoAB.webp" alt=""></b></a>
+            </div>
+            <div class="timkiem">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="linkgiohang">
+
+                <a href="http://127.0.0.1:5500/GioHang.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                <a href="http://127.0.0.1:5500/DangKy.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        <div class="DC">
+            <div class="vtrWey"></div>
+        </div>
+        <div class="diachi">
+            <div>
+                <p class="diachip"><i class="fa-solid fa-map-location-dot"> </i> Địa chỉ nhận hàng</p>
+                <p><b>Tấn Đạt (+84) 377851999 </b>Trường tiểu học ấp Phủ, xã Tân Phong, huyện Thạnh Phú, tỉnh Bến Tre <a
+                        href="">Thay đổi</a></p>
+            </div>
+        </div>
+        <div class="Top">
+            <div class="divTieude1">
+                <input type="checkbox" checked> Sản phẩm
+            </div>
+            <div class="divTop">
+                <table>
+                    <tr>
+                        <td>Đơn giá</td>
+                        <td>Số lượng</td>
+                        <td>Số tiền</td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="main">
+            <div class="mainSP">
+                <table class="mainleft">
+                    <tr>
+                        <td colspan="3">Mua kèm deal độc quyền <a href=""> Xem thêm ></a></td>
+                    </tr>
+                    <tr>
+                        <td class="GH_sanpham">
+                            <div><input type="checkbox" checked></div>
+                            <div><img src="3-narsiso rodriguez.webp" alt=""></div>
+                        </td>
+                        <td>
+                            Nước Hoa Nữ Narciso Rodriguez Narciso EDP Poudree 90ml
+
+                        </td>
+                        <td>
+                            Phân loại đơn hàng: <b>Nữ</b>
+
+                        </td>
+
+                    </tr>
+                </table>
+                <table class="mainright">
+                    <tr>
+                        <td>
+                            <p class="gia1">2,800,000 VNĐ </p>
+                        </td>
+                        <td>
+                            <input class="tangGiam" type="number" name="points" min="0" max="100" step="1" value="1">
+                        </td>
+                        <td>
+                            <p class="gia2">2,800,000 VNĐ </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mainSP">
+                <table class="mainleft">
+                    <tr>
+                        <td colspan="3">Mua kèm deal độc quyền <a href=""> Xem thêm ></a></td>
+                    </tr>
+                    <tr>
+                        <td class="GH_sanpham">
+                            <div><input type="checkbox" checked></div>
+                            <div><img src="4-narcios.webp" alt=""></div>
+                        </td>
+                        <td>
+                            Nước Hoa Nữ Narciso Rodriguez For Her EDP 30ml
+                        </td>
+                        <td>
+                            Phân loại đơn hàng: <b>Nữ</b>
+
+                        </td>
+
+                    </tr>
+                </table>
+                <table class="mainright">
+                    <tr>
+                        <td>
+                            <p class="gia1">1,480,000 VNĐ </p>
+                        </td>
+                        <td>
+                            <input class="tangGiam" type="number" name="points" min="0" max="100" step="1" value="2">
+                        </td>
+                        <td>
+                            <p class="gia2">2,960,000 VNĐ </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mainSP">
+                <table class="mainleft">
+                    <tr>
+                        <td colspan="3">Mua kèm deal độc quyền <a href=""> Xem thêm ></a></td>
+                    </tr>
+                    <tr>
+                        <td class="GH_sanpham">
+                            <div><input type="checkbox" checked></div>
+                            <div><img src="6-Moschino Toy Boy EDP 30ml.webp" alt=""></div>
+                        </td>
+                        <td>
+                            Nước Hoa Nam Moschino Toy Boy EDP 30ml
+                        </td>
+                        <td>
+                            Phân loại đơn hàng: <b>Nam</b>
+
+                        </td>
+
+                    </tr>
+                </table>
+                <table class="mainright">
+                    <tr>
+                        <td>
+                            <p class="gia1">1,994,400 VNĐ </p>
+                        </td>
+                        <td>
+                            <input class="tangGiam" type="number" name="points" min="0" max="100" step="1" value="2">
+                        </td>
+                        <td>
+                            <p class="gia2">3,988,800 VNĐ </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ThanhToan">
+
+            <div class="TT">
+                <p>Thẻ tín dụng/Thẻ ghi nợ <a href=""> <i class="fa-solid fa-chevron-right"></i></a></p>
+
+            </div>
+            <div class="space">
+            </div>
+            <div class="cards">
+                <div>
+                    <a href=""><img src="sacombank.jfif" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img src="vietcombank.jfif" alt=""></a>
+                </div>
+                <div>
+                    <a href=""><img src="bidv.png" alt=""></a>
+                </div>
+                <div>
+                    <button class="themThe">Thêm thẻ <i class="fa-regular fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="space">
+            </div>
+            <div class="TT">
+                <p>Thanh toán khi nhận hàng</p>
+                <input type="checkbox">
+            </div>
+            <div class="space"></div>
+            <div class="TongTien">
+                <table>
+                    <tr>
+                        <td>Tổng tiền hàng</td>
+                        <td class="tongTH">9,748,600 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Phí vận chuyển</td>
+                        <td class="tongTH">30,000 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>Tổng thanh toán:</td>
+                        <td class="tongTT">9,751,600 VNĐ</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="space"></div>
+            <div class="dathang">
+                <div>Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="">Điều khoản Shop</a></div>
+                <div><button>Đặt hàng</button></div>
+
+            </div>
+        </div>
+        <div id="pageF">
+            <div class="divPageF">
+                <label for=""><b>Hỗ trợ khác hàng</b></label><br><br>
+                <a href="" >Chăm sóc khách hàng: <b class="chamsoc"> 1900 88 68 99</b></a><br><br>
+                <a href="">Các câu hỏi thường gặp</a><br><br>
+                <a href="">Hướng dẫn đặt hàng</a><br><br>
+                <a href="">Phương thức thanh toán</a><br><br>
+                <a href="">Phương thức vận chuyển</a><br><br>
+                <a href="">Chính sách đổi hàng</a><br><br>
+                <a href="">Hỗ trợ khách hàng: tsmdatdat@gmail.com</a><br><br>
+            </div>
+            <div class="divPageF">
+                <label for=""><b>Về AB Beauty World</b></label><br><br>
+                <a href="">Giới thiệu AB BEAUTY WORLD</a><br><br>
+                <a href="">Tuyển dụng</a><br><br>
+                <a href="">Chính sách bảo mật thanh toán</a><br><br>
+                <a href="">Chính sách bảo mật thông tin cá nhân</a><br><br>
+                <a href="">Chính sách giải quyết khiếu nại</a><br><br>
+                <a href="">Liên hệ</a><br><br>
+            </div>
+            <div class="divPageF">
+                <label for=""><b>Hệ Thống Siêu Thị Mỹ Phẩm</b></label><br><br>
+                <a href="">1613 Tỉnh Lộ 10, P. Tân Tạo A, Q. Bình Tân</a><br><br>
+                <a href="">348 -350 Trần Phú, P. 7, Q. 5</a><br><br>
+                <a href="">198A Mã Lò, P. Bình Trị Đông A, Q. Bình Tân</a><br><br>
+                <a href="">236K Lê Văn Sỹ, P. 1, Q. Tân Bình</a><br><br>
+                <a href="">388 - 390 Nguyễn Thị Thập, P. Tân Quy, Q.7</a><br><br>
+
+            </div>
+            <div class="divPageF">
+                <label for="">
+                    <a href="http://127.0.0.1:5500/profile.html" ><b class="profile">Thông tin giam đốc</b></a>
+                    </label><br><br>
+                <a href="">Họ tên: Nguyễn Tấn Đạt</a><br><br>
+                <a href="">Mã số sinh viên: 2001210166</a><br><br>
+                <a href="">SĐT liên hê: 0377851498</a><br><br>
+                <a href="">Tài khoảng Facebook</a><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
